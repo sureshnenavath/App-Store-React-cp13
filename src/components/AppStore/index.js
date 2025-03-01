@@ -328,7 +328,7 @@ class AppStore extends Component {
           <h1 className="app-main-heading">App Store</h1>
           <div className="search-bar-container">
             <input
-              type="text"
+              type="search"
               placeholder="Search"
               className="search-input"
               value={searchInput}

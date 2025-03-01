@@ -1,18 +1,20 @@
-// Write your code here
-import './index.css'
+import React from 'react'
+import './index.css' // Ensure you have the correct path
 
-const TabItem = props => {
-  const {eachTabList, onHandleTabClick, isActive} = props
-  const applyLineStyle = isActive ? 'active-tab-btn' : ''
-  const handleClick = () => {
+const TabItem = ({eachTabList, isActive, onHandleTabClick}) => {
+  const clickButton = () => {
     onHandleTabClick(eachTabList.tabId)
   }
   return (
     <li>
-      <button className={`tab-btn ${applyLineStyle}`} onClick={handleClick}>
+      <button
+        className={`tab-btn ${isActive ? 'active-tab-btn' : ''}`}
+        onClick={clickButton}
+      >
         {eachTabList.displayText}
       </button>
     </li>
   )
 }
+
 export default TabItem
