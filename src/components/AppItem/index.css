@@ -1,0 +1,22 @@
+.app-list-item {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  border: 1px solid rgb(94, 164, 187);
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgb(97, 117, 123);
+  min-width: 120px;
+  gap: 8px;
+}
+.app-img {
+  height: 50px;
+  width: 50px;
+}
+.app-butt {
+  border: 0px;
+  background-color: transparent;
+}
